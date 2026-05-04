@@ -1,0 +1,37 @@
+# Runtime / Generated - don't touch
+.cache/
+.local/share/Trash/
+.local/share/fnm/
+.local/share/pnpm/
+.local/share/zoxide/
+.config/dconf/
+.config/pulse/
+.config/fontconfig/
+.config/session/
+.config/environment.d/
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.config/mimeapps.list
+.config/xdg-desktop-portal/
+.config/goa-1.0/
+.config/libaccounts-glib/
+.config/menus/
+.config/nautilus/
+.config/org.gnome.Ptyxis/
+.config/yelp/
+.config/gtk-3.0/
+.config/gtk-4.0/
+.config/gtkrc
+.config/gtkrc-2.0
+.config/autostart/
+.config/rncbc.org/
+.config/go/
+
+# Large app data (managed separately)
+.config/obsidian/
+.config/zen/
+.config/Zettlr/
+.config/opencode/node_modules/
+
+# dotfiles (old)
+.dotfiles/

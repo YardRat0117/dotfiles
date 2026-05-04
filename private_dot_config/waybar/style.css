@@ -1,0 +1,118 @@
+* {
+    font-family: "Maple Mono NL NFMono CN", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+
+/* ── warning blink ── */
+@keyframes blink_red {
+    to { color: #FF8A8A; }
+}
+
+/* ── floating transparent bar ── */
+window#waybar {
+    background-color: transparent;
+}
+window > box {
+    margin: 6px 12px;
+    background-color: rgba(40, 44, 52, 0.75);
+    border-radius: 12px;
+}
+
+/* ── tooltip ── */
+tooltip {
+    background: #3E4451;
+    border-radius: 8px;
+}
+tooltip label {
+    color: #ABB2BF;
+    font-size: 12px;
+}
+
+/* ── workspaces ── */
+#workspaces {
+    background: transparent;
+    padding: 2px 4px;
+}
+#workspaces button {
+    border: none;
+    padding: 4px 10px;
+    background: transparent;
+    color: #ABB2BF;
+}
+#workspaces button.active {
+    background-color: rgba(97, 175, 239, 0.45);
+    color: #61AFEF;
+}
+#workspaces button:hover {
+    background-color: rgba(97, 175, 239, 0.2);
+    color: #ABB2BF;
+}
+
+/* ── shared padding ── */
+#custom-poweroff,
+#custom-reboot,
+#custom-system-info,
+#clock,
+#network,
+#pulseaudio,
+#battery {
+    padding: 4px 14px;
+}
+
+/* ── power / reboot ── */
+#custom-poweroff,
+#custom-reboot {
+    color: #E06C75;
+}
+#custom-poweroff:hover,
+#custom-reboot:hover {
+    background-color: rgba(224, 108, 117, 0.25);
+}
+
+/* ── system-info (text colored by script) ── */
+#custom-system-info {
+    font-weight: bold;
+}
+
+/* ── clock ── */
+#clock {
+    color: #ABB2BF;
+    font-weight: bold;
+}
+#clock:hover {
+    background-color: rgba(62, 68, 81, 0.5);
+}
+
+/* ── network ── */
+#network {
+    color: #E5C07B;
+}
+#network.disconnected {
+    color: #5C6370;
+}
+
+/* ── pulseaudio ── */
+#pulseaudio {
+    color: #5296E2;
+}
+
+/* ── battery ── */
+#battery {
+    color: #8FCB82;
+}
+#battery.charging {
+    color: #61AFEF;
+}
+#battery.critical:not(.charging),
+#battery.warning:not(.charging) {
+    color: #E06C75;
+    animation-name: blink_red;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

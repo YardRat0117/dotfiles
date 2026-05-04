@@ -1,0 +1,12 @@
+[Unit]
+Description=Xremap service for yardrat
+After=default.target
+
+[Service]
+ExecStart=/home/yardrat/.cargo/bin/xremap /home/yardrat/.config/xremap.yml --watch
+Restart=on-failure
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

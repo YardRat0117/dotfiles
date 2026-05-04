@@ -1,0 +1,53 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 48,
+    "spacing": 6,
+    "modules-left": ["hyprland/workspaces", "custom/poweroff", "custom/reboot"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/system-info", "network", "pulseaudio", "battery"],
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "active-only": false
+    },
+    "custom/poweroff": {
+        "exec": "echo 'Power'",
+        "interval": 0,
+        "on-click": "/home/yardrat/.local/bin/poweroff_confirm.sh"
+    },
+    "custom/reboot": {
+        "exec": "echo 'Reboot'",
+        "interval": 0,
+        "on-click": "/home/yardrat/.local/bin/reboot_confirm.sh"
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%a %H:%M}",
+        "format-alt": "{:%Y-%m-%d %A %H:%M:%S}"
+    },
+    "custom/system-info": {
+        "interval": 3,
+        "exec": "/home/yardrat/.local/bin/system-info.sh",
+        "return-type": "json",
+        "escape": false,
+        "tooltip": true
+    },
+    "network": {
+        "interval": 1,
+        "format-wifi": "Conn {signalStrength}%",
+        "format-disconnected": "Disconnected"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": {
+            "headphone": "Plug",
+            "default": "Audio"
+        }
+    },
+    "battery": {
+        "interval": 30,
+        "format": "DC {capacity}% {icon} ({power}W)",
+        "format-charging": "CR {capacity}% {icon} ({power}W)",
+        "tooltip": true
+    }
+}

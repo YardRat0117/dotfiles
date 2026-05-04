@@ -1,0 +1,91 @@
+/*
+ * wofi style — based on kitty color scheme
+ * background:  #263238 (kitty)
+ * foreground:  #CAD9D9
+ * accent:      #6B8ED9 (color4)
+ */
+
+window {
+    margin: 0px;
+    border: 2px solid #455A63;
+    border-radius: 12px;
+    background-color: #1a2327;
+    font-family: "Maple Mono NL NFMono CN";
+    font-size: 18px;
+}
+
+#input {
+    margin: 8px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    color: #CAD9D9;
+    background-color: #263238;
+    outline: none;
+    box-shadow: none;
+}
+
+#input:focus {
+    box-shadow: inset 0 0 0 1px #6B8ED9;
+}
+
+#inner-box {
+    margin: 4px 8px 8px 8px;
+    border: none;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll slider {
+    background-color: #455A63;
+    border-radius: 4px;
+    min-width: 6px;
+}
+
+#text {
+    margin: 4px 6px;
+    border: none;
+    color: #CAD9D9;
+}
+
+#entry {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+#entry:selected {
+    background-color: #6B8ED9;
+    border-radius: 6px;
+}
+
+#text:selected {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#img {
+    margin: 4px 6px 4px 8px;
+}
+
+#expander-box {
+    margin: 2px 8px;
+    padding: 2px 8px;
+    border: none;
+    border-radius: 6px;
+    color: #8a9ea8;
+    background-color: transparent;
+    font-size: 14px;
+}

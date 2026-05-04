@@ -1,0 +1,70 @@
+tools:
+  debian:
+    image: debian
+    entry: /bin/bash
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  python:
+    image: python
+    entry: python
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  vvp:
+    image: iverilog
+    entry: vvp
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  iverilog:
+    image: iverilog
+    entry: iverilog
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  gcc:
+    image: gcc
+    entry: gcc
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  g++:
+    image: gcc
+    entry: g++
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  clang:
+    image: silkeh/clang
+    entry: clang
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  clang++:
+    image: silkeh/clang
+    entry: clang++
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  go:
+    image: golang
+    entry: go
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace
+
+  sh:
+    image: busybox
+    entry: sh
+    workdir: /workspace
+    volumes:
+      - $PWD:/workspace

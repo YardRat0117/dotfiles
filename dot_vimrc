@@ -1,0 +1,30 @@
+vim9script
+
+# --- Autocommands ---
+source ~/.vimrc.d/autocmd.vim
+
+# --- Plugins (vim-plug) ---
+source ~/.vimrc.d/plugin.vim
+
+# --- Basic Configs ---
+source ~/.vimrc.d/basic.vim
+
+
+# --- Plugin Config ---
+# airline
+source ~/.vimrc.d/airline.vim
+
+# theme
+source ~/.vimrc.d/theme.vim
+
+# vim-lsp
+source ~/.vimrc.d/lsp.vim
+
+# Vista.vim
+source ~/.vimrc.d/vista.vim
+
+# vim-ai
+source ~/.vimrc.d/llm.vim
+
+# --- Multi-leader key integration ---
+source ~/.vimrc.d/hotkey.vim

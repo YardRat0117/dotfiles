@@ -1,0 +1,13 @@
+modmap:
+  - name: CapsLock Escape
+    remap:
+      CapsLock: Esc
+      Esc: CapsLock
+
+keymap:
+  - name: Ctrl + Alt as Arrows
+    remap:
+      Ctrl-Alt-I: Up
+      Ctrl-Alt-J: Left
+      Ctrl-Alt-K: Down
+      Ctrl-Alt-L: Right
