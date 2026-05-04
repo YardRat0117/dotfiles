@@ -35,3 +35,6 @@
 
 # dotfiles (old)
 .dotfiles/
+
+# Bootstrap script (manual execution only)
+bootstrap.sh
