@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "bottom",
+    "position": "top",
     "height": 48,
     "spacing": 6,
     "modules-left": ["hyprland/workspaces", "custom/poweroff", "custom/reboot"],
