@@ -15,7 +15,7 @@ g:vim_ai_chat = {
    "provider": "openai",
    "prompt": "",
    "options": {
-     "model": "deepseek-v4-pro", # till 05.05
+     "model": "deepseek-v4-flash",
      "endpoint_url": "https://api.deepseek.com/chat/completions",
      "max_tokens": 20000,
      "request_timeout": 30,

@@ -10,3 +10,6 @@ source $HOME/.zshrc.d/config.zsh
 source $HOME/.zshrc.d/env.zsh
 source $HOME/.zshrc.d/aliases.zsh
 source $HOME/.zshrc.d/pnpm.zsh
+
+# foxsay - show a motivational fox on terminal launch
+foxsay

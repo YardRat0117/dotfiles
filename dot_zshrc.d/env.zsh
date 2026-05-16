@@ -12,6 +12,4 @@ export PATH="/usr/local/go/bin:$PATH"
 export PATH="$(go env GOPATH):$PATH"
 export PATH="$(go env GOPATH)/bin:$PATH"
 export GOPROXY=https://goproxy.cn,direct
-export HTTP_PROXY=http://localhost:7897/
-export HTTPS_PROXY=http://localhost:7897/
 eval "$(fnm env)"

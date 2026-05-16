@@ -1,7 +1,7 @@
 alias bat=batcat
 alias ls=lsd
 alias gdb='gdb -tui'
-alias icat='kitty +kitten icat'
+alias kicat='kitty +kitten icat'
 alias :q='exit'
 eval "$(zoxide init zsh --cmd zd)"
 
